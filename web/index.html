@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="강원대학교 공고를 모아보세요">
+<title>강대 모음</title>
+<script>try { if (localStorage.getItem("moabom.theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (_) {}</script>
+<link rel="stylesheet" href="style.css">
+<script>
+  // 파일을 더블클릭해서 열면(file://) 브라우저 보안 때문에 app.js가 실행되지 않음
+  // → 백엔드가 제공하는 주소로 이동 (백엔드가 꺼져 있으면 안내 문구가 보임)
+  if (location.protocol === 'file:') location.replace('http://localhost:8000/' + location.hash);
+</script>
+<script src="config.js"></script>
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <a class="brand" href="/" title="사이트 새로고침">
+      <span class="mascot"><img src="https://kangwon.ac.kr/assets/ko/images/sub/mascot2.png" alt="강원대학교 마스코트 곰두리"></span>
+      <span><strong>강대 모음</strong><small>KANGWON NOTICE</small></span>
+    </a>
+
+    <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="공고 제목이나 내용을 검색해 보세요" aria-label="공고 검색"></label>
+    <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">다크 모드 켜기</button>
+    <!-- 앱 전용: 사용자 정보 수정 -->
+    <a class="settings-btn app-only" href="#settings" aria-label="설정 (사용자 정보 수정)">⚙</a>
+  </header>
+
+  <nav aria-label="주요 메뉴">
+    <a href="#home">전체 공고</a>
+    <a href="#department">내 소식</a>
+
+  </nav>
+
+  <div class="layout">
+  <!-- 좌측 배너: 조회수·좋아요·마감 순위 (화면이 좁으면 목록 아래로 내려감) -->
+  <aside id="side" aria-label="인기 공고">
+    <section class="side-card">
+      <div class="side-head"><h2>지금 많이 보는 중</h2><span id="side-live" class="live"></span></div>
+      <ol id="rank-views" class="rank"></ol>
+    </section>
+    <section class="side-card">
+      <div class="side-head"><h2>좋아요 많은 공고</h2></div>
+      <ol id="rank-likes" class="rank"></ol>
+    </section>
+    <section class="side-card">
+      <div class="side-head"><h2>곧 마감돼요</h2></div>
+      <ol id="rank-deadline" class="rank"></ol>
+    </section>
+  </aside>
+
+  <main>
+    <!-- 앱 전용: 사용자 정보 입력 (최초 실행 · 설정) -->
+    <section id="onboard" class="view" hidden>
+      <div id="onboard-body" class="panel onboard"></div>
+    </section>
+
+    <!-- 앱 전용: 나에게 맞는 공고 -->
+    <section id="mine" class="view" hidden>
+      <div class="page-title"><span class="eyebrow">FOR YOU</span><h1>나에게 맞는 공고</h1><p id="mine-desc">입력한 정보와 관심 주제로 고른, 지금 신청할 수 있는 공고예요.</p></div>
+      <div id="mine-list" aria-live="polite"></div>
+    </section>
+
+    <!-- 앱 전용: 좋아요 누른 공고 -->
+    <section id="liked" class="view" hidden>
+      <div class="page-title"><span class="eyebrow">MY LIKES</span><h1>좋아요한 공고</h1><p>♥ 좋아요를 누른 공고만 모았어요. 이 휴대폰에 저장돼요.</p></div>
+      <div id="liked-list" aria-live="polite"></div>
+    </section>
+
+    <!-- 전체 공고 -->
+    <section id="home" class="view">
+      <div class="hero">
+        <div class="hero-copy"><span class="eyebrow">CAMPUS NOTICE BOARD</span>
+        <h1>학교 소식 알고가!</h1>
+        <p>행사부터 장학금까지, 필요한 공고를 한곳에서 확인하세요.</p></div><div class="hero-mark" aria-hidden="true"><span>더 빠르게 만나는</span><strong>우리 학교 소식</strong><i>✳</i></div>
+      </div>
+      <div class="filter-title"><strong>공고 찾아보기</strong><span>캠퍼스와 분류를 선택해 보세요</span></div>
+      
+      <div id="filters"></div>
+      <div class="period-filter"><label for="upload-period">업로드 기간</label><select id="upload-period"><option value="">전체 기간</option><option value="1d">최근 1일</option><option value="1w">최근 1주</option><option value="1m">최근 1개월</option><option value="1y">최근 1년</option></select></div><div id="city-link" class="city-link" hidden></div>
+      <div class="section-head" id="list-head">
+        <div><h2><span id="list-title">진행 중 공고</span> <span id="count" class="count"></span></h2><p>학교의 새로운 소식을 확인해 보세요.</p></div>
+        <div class="refresh-wrap"><label for="sort-order" class="sort-label">정렬</label><select id="sort-order" aria-label="공고 정렬"><option value="newest">최신순</option><option value="views">조회순</option><option value="oldest">오래된 순</option></select><span id="sync-status" class="sync" hidden>새 공고 확인 중…</span><button id="refresh" class="button secondary">새로고침 ↻</button></div>
+      </div>
+      <div id="notices" aria-live="polite"></div>
+      <div id="more-wrap" class="more" hidden><button id="more" class="button secondary">더 보기</button></div>
+      <p class="note">공고의 내용과 일정은 변경될 수 있습니다. 반드시 학교 원문을 확인해 주세요.</p>
+    </section>
+
+    <!-- 공고 상세 (#notice/아이디) -->
+    <section id="notice" class="view" hidden>
+      <button class="button secondary back" type="button" id="back">← 목록으로</button>
+      <div id="notice-detail" aria-live="polite"></div>
+    </section>
+
+    <!-- 내 소식 -->
+    <section id="department" class="view" hidden>
+      <div class="page-title"><span class="eyebrow">MY DEPARTMENT</span><h1>내 소식</h1><p>학과 소식과 좋아요한 공고를 확인하세요.</p></div>
+      <div class="my-tabs" role="tablist" aria-label="내 소식 분류"><button type="button" id="my-department-tab" class="my-tab active" role="tab" aria-selected="true" aria-controls="my-department-panel">학과 소식</button><button type="button" id="my-likes-tab" class="my-tab" role="tab" aria-selected="false" aria-controls="my-likes-panel">♥ 좋아요</button></div>
+      <div class="panel" id="my-department-panel" role="tabpanel" aria-labelledby="my-department-tab">
+        <label class="switchrow"><span><strong>학과 소식 보기</strong><small>활성화한 경우에만 학과 소식이 표시됩니다.</small></span><input id="department-enabled" type="checkbox" role="switch"></label>
+        <div id="department-options" hidden>
+          <label for="department-campus">캠퍼스 선택</label>
+          <select id="department-campus"><option value="">캠퍼스를 선택하세요</option><option>춘천</option><option>삼척</option><option>강릉</option><option>원주</option></select>
+          <label for="department-field">계열 선택</label>
+          <select id="department-field" disabled><option value="">계열을 선택하세요</option><option>인문계</option><option>자연계</option><option>공대</option><option>예체능</option><option>기타·미분류</option></select>
+          <p class="meta">학교 공식 학과 목록을 바탕으로 분류했습니다. 학과 명칭이나 소속은 변경될 수 있습니다.</p>
+          <label for="department-select">학과 선택</label>
+          <select id="department-select" disabled><option value="">학과를 선택하세요</option></select>
+          <div id="department-posts" aria-live="polite"></div>
+        </div>
+      </div>
+      <div id="my-likes-panel" role="tabpanel" aria-labelledby="my-likes-tab" hidden><p class="meta">이 브라우저에서 좋아요한 공고를 보여줍니다.</p><div id="liked-posts" aria-live="polite"></div></div>
+    </section>
+
+    <!-- 관리자 패널 -->
+    <section id="admin" class="view" hidden>
+      <div class="page-title"><span class="eyebrow">ADMINISTRATION</span><h1>관리자 패널</h1><p>학과 행사를 관리하고 관리자 키를 발급합니다.</p></div>
+      <div id="login-panel" class="panel narrow">
+        <h2>관리자 키로 로그인</h2>
+        <p class="meta">최종 관리자는 서버의 ADMIN_TOKEN 값, 일반·학과 관리자는 발급받은 키를 입력하세요.</p>
+        <form id="login-form"><label for="admin-key">관리자 키</label><input id="admin-key" type="password" autocomplete="off" required><button class="button" type="submit">로그인</button></form>
+        <p id="login-error" class="error" role="alert"></p>
+      </div>
+      <div id="admin-panel" hidden>
+        <div class="adminbar">
+          <strong id="admin-role"></strong>
+          <div>
+            <button id="add-post" class="button">+ 학과 행사 작성</button>
+            <button id="add-department" class="button secondary manager-only">학과 추가</button>
+            <button id="new-key" class="button secondary manager-only">관리자 키 발급</button>
+            <button id="logout" class="button secondary">로그아웃</button>
+          </div>
+        </div>
+        <h2 class="sub">중요 표시 공고</h2><div id="admin-important"></div>
+        <h2 class="sub">팝업 표시 공고</h2><div id="admin-popup"></div>
+        <h2 class="sub">학과 행사</h2>
+        <div id="admin-posts" aria-live="polite"></div>
+        <div class="manager-only">
+          <h2 class="sub">학과 <span id="dept-count" class="count"></span></h2>
+          <div id="admin-departments"></div>
+          <h2 class="sub">발급된 관리자 키</h2>
+          <div id="admin-keys"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <footer>
+    <div><strong>강대 모음</strong><p>캠퍼스의 모든 소식을 한눈에.</p><p><a href="/admin.html" class="admin-link">관리자 사이트</a></p></div>
+    <div><strong>도움이 필요하신가요?</strong><p>춘천 대표번호 <a href="tel:0332506114">033-250-6114</a><br>삼척 대표번호 <a href="tel:0335706114">033-570-6114</a><br>춘천 대학일자리플러스센터 <a href="tel:0332507761">033-250-7761</a><br>삼척 교내 장학 <a href="tel:0335706218">033-570-6218</a><br>삼척 국가장학 <a href="tel:0335706220">033-570-6220</a></p></div>
+  </footer>
+</div>
+
+<!-- 학과 행사 작성/수정 -->
+<dialog id="post-dialog"><form id="post-form">
+  <h2 id="post-dialog-title">학과 행사 작성</h2>
+  <label for="post-department">학과</label><select id="post-department" required></select>
+  <label for="post-title">제목</label><input id="post-title" required maxlength="200">
+  <label for="post-body">내용</label><textarea id="post-body" maxlength="10000" rows="6"></textarea>
+  <div class="two">
+    <div><label for="post-start">행사 시작</label><input id="post-start" type="datetime-local"></div>
+    <div><label for="post-end">행사 종료</label><input id="post-end" type="datetime-local"></div>
+  </div>
+  <label for="post-location">장소</label><input id="post-location" maxlength="100">
+  <div class="two">
+    <div><label for="post-deadline">신청 마감일 <small>(비우면 행사 날짜)</small></label><input id="post-deadline" type="date"></div>
+    <div><label for="post-contact">문의</label><input id="post-contact" maxlength="100"></div>
+  </div>
+  <label for="post-link">신청·안내 링크 <small>(선택)</small></label><input id="post-link" type="url" placeholder="https://">
+  <label for="post-files">사진·첨부파일 <small>(사진은 본문에 표시, 그 외는 첨부파일)</small></label>
+  <input id="post-files" type="file" multiple accept=".jpg,.jpeg,.png,.gif,.webp,.pdf,.hwp,.hwpx,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.zip,.txt">
+  <ul id="post-file-list" class="filelist"></ul>
+  <p class="error" id="post-error" role="alert"></p>
+  <div class="dialog-actions"><button type="button" class="button secondary" data-close="post-dialog">취소</button><button type="submit" class="button" id="post-save">저장</button></div>
+</form></dialog>
+
+<!-- 학과 추가 -->
+<dialog id="dept-dialog"><form id="dept-form">
+  <h2>학과 추가</h2>
+  <label for="dept-name">학과명</label><input id="dept-name" required maxlength="50">
+  <label for="dept-college">단과대학</label><input id="dept-college" maxlength="50">
+  <label for="dept-campus">캠퍼스</label><select id="dept-campus"><option>춘천</option><option selected>삼척</option><option>강릉</option><option>원주</option></select>
+  <p class="error" id="dept-error" role="alert"></p>
+  <div class="dialog-actions"><button type="button" class="button secondary" data-close="dept-dialog">취소</button><button type="submit" class="button">추가</button></div>
+</form></dialog>
+
+<!-- 관리자 키 발급 -->
+<dialog id="key-dialog"><form id="key-form">
+  <h2>관리자 키 발급</h2>
+  <label for="key-role">관리자 등급</label><select id="key-role"><option value="department">학과 관리자</option><option value="general">일반 관리자</option></select>
+  <div id="key-department-group"><label for="key-department">담당 학과</label><select id="key-department"></select></div>
+  <label for="key-label">메모 <small>(예: 담당자 이름)</small></label><input id="key-label" maxlength="50">
+  <p id="key-error" class="error" role="alert"></p>
+  <div class="dialog-actions"><button type="button" class="button secondary" data-close="key-dialog">취소</button><button type="submit" class="button">발급</button></div>
+</form></dialog>
+
+<!-- 접속 팝업 (관리자가 게시글에서 '팝업으로 띄우기'를 누른 글의 대표 이미지) -->
+<dialog id="popup-dialog" class="popup">
+  <a id="popup-link" href="#"><img id="popup-image" alt=""></a>
+  <p id="popup-title" class="popup-title"></p>
+  <div class="popup-actions">
+    <button type="button" class="button secondary" id="popup-never">앞으로 보지 않기</button>
+    <button type="button" class="button" id="popup-close">닫기</button>
+  </div>
+</dialog>
+
+<dialog id="issued-dialog">
+  <h2>발급된 관리자 키</h2>
+  <p>이 키는 지금 한 번만 표시됩니다. 안전하게 전달해 주세요.</p>
+  <code id="issued-key"></code>
+  <div class="dialog-actions"><button class="button secondary" id="copy-key" type="button">복사</button><button class="button" data-close="issued-dialog">확인</button></div>
+</dialog>
+<!-- 앱 전용: 하단 대분류 탭 -->
+<nav class="tabbar app-only" aria-label="앱 메뉴">
+  <a href="#home" data-tab="home"><span>🏠</span>전체 공고</a>
+  <a href="#mine" data-tab="mine"><span>⭐</span>맞춤 공고<b id="mine-badge" class="tab-badge" hidden></b></a>
+  <a href="#liked" data-tab="liked"><span>❤️</span>좋아요</a>
+  <a href="#department" data-tab="department"><span>🎓</span>내 소식</a>
+  <a href="#settings" data-tab="settings"><span>⚙</span>설정</a>
+</nav>
+</body>
+</html>

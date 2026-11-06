@@ -1,0 +1,20 @@
+{
+  "name": "moabom-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "강대 모음 앱 (Capacitor) — ../web 화면을 앱으로 감쌈",
+  "type": "module",
+  "scripts": {
+    "sync-web": "node scripts/sync-web.mjs",
+    "sync": "node scripts/sync-web.mjs && npx cap sync",
+    "android": "node scripts/sync-web.mjs && npx cap sync android && npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/local-notifications": "^8.3.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.0"
+  }
+}

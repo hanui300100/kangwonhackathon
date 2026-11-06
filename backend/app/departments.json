@@ -1,0 +1,1076 @@
+[
+  {
+    "campus": "춘천",
+    "college": "간호대학",
+    "name": "간호학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "경영대학",
+    "name": "경영·회계학부",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "경영대학",
+    "name": "경제·정보통계학부",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "경영대학",
+    "name": "관광경영학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "경영대학",
+    "name": "국제무역학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "경영대학",
+    "name": "경영대학 자유전공학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "춘천",
+    "college": "글로벌미래융합대학",
+    "name": "미래융합가상학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "춘천",
+    "college": "글로벌미래융합대학",
+    "name": "춘천자유전공학부",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "춘천",
+    "college": "글로벌미래융합대학",
+    "name": "글로벌융합학부",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "춘천",
+    "college": "농업생명과학대학",
+    "name": "스마트팜농산업학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "농업생명과학대학",
+    "name": "스마트팜융합바이오시스템공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "농업생명과학대학",
+    "name": "식품생명공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "농업생명과학대학",
+    "name": "생물자원과학부",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "농업생명과학대학",
+    "name": "원예학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "농업생명과학대학",
+    "name": "식품자원경제학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "농업생명과학대학",
+    "name": "지역건설공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "농업생명과학대학",
+    "name": "생명·환경융합학부",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "농업생명과학대학",
+    "name": "농업생명과학대학 자유전공학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "춘천",
+    "college": "동물생명과학대학",
+    "name": "동물산업융합학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "동물생명과학대학",
+    "name": "동물응용과학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "동물생명과학대학",
+    "name": "동물자원과학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "동물생명과학대학",
+    "name": "동물생명과학대학 자유전공학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "건축학과(5년제)",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "건축공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "토목공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "환경공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "기계융합공학부",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "배터리융합공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "디자인학과",
+    "field": "예체능"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "무용학과",
+    "field": "예체능"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "미술학과",
+    "field": "예체능"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "스포츠과학과",
+    "field": "예체능"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "스마트산업공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "에너지자원공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "영상문화학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "음악학과",
+    "field": "예체능"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "화공ㆍ생물공학부",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "문화예술·공과대학",
+    "name": "문화예술·공과대학 자유전공학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "춘천",
+    "college": "사범대학",
+    "name": "가정교육과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "춘천",
+    "college": "사범대학",
+    "name": "과학교육학부",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사범대학",
+    "name": "교육학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사범대학",
+    "name": "국어교육과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사범대학",
+    "name": "수학교육과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사범대학",
+    "name": "역사교육과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사범대학",
+    "name": "영어교육과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사범대학",
+    "name": "윤리교육과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사범대학",
+    "name": "일반사회교육과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사범대학",
+    "name": "지리교육과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사범대학",
+    "name": "체육교육과",
+    "field": "예체능"
+  },
+  {
+    "campus": "춘천",
+    "college": "사범대학",
+    "name": "한문교육과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사회과학대학(춘천)",
+    "name": "문화인류학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사회과학대학(춘천)",
+    "name": "미디어커뮤니케이션학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사회과학대학(춘천)",
+    "name": "부동산학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사회과학대학(춘천)",
+    "name": "사회학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사회과학대학(춘천)",
+    "name": "심리학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사회과학대학(춘천)",
+    "name": "정치외교학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사회과학대학(춘천)",
+    "name": "행정학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "사회과학대학(춘천)",
+    "name": "사회과학대학(춘천) 자유전공학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "춘천",
+    "college": "산림환경과학대학",
+    "name": "산림경영학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "산림환경과학대학",
+    "name": "산림바이오소재공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "산림환경과학대학",
+    "name": "산림자원학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "산림환경과학대학",
+    "name": "산림환경보호학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "산림환경과학대학",
+    "name": "펄프제지공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "산림환경과학대학",
+    "name": "생태조경디자인학과",
+    "field": "예체능"
+  },
+  {
+    "campus": "춘천",
+    "college": "산림환경과학대학",
+    "name": "산림환경과학대학 자유전공학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "춘천",
+    "college": "수의과대학",
+    "name": "수의학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "약학대학",
+    "name": "약학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "의과대학",
+    "name": "의예과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "의과대학",
+    "name": "의학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "의생명과학대학",
+    "name": "분자생명과학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "의생명과학대학",
+    "name": "생명건강공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "의생명과학대학",
+    "name": "생물의소재공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "의생명과학대학",
+    "name": "의생명시스템과학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "의생명과학대학",
+    "name": "의생명공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "의생명과학대학",
+    "name": "의생명과학대학 자유전공학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "춘천",
+    "college": "인문대학(춘천)",
+    "name": "국어국문학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "인문대학(춘천)",
+    "name": "독어독문학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "인문대학(춘천)",
+    "name": "불어불문학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "인문대학(춘천)",
+    "name": "사학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "인문대학(춘천)",
+    "name": "영어영문학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "인문대학(춘천)",
+    "name": "일본학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "인문대학(춘천)",
+    "name": "중어중문학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "인문대학(춘천)",
+    "name": "철학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "춘천",
+    "college": "인문대학(춘천)",
+    "name": "인문대학(춘천) 자유전공학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "춘천",
+    "college": "자연과학대학(춘천)",
+    "name": "반도체물리학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "자연과학대학(춘천)",
+    "name": "생명과학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "자연과학대학(춘천)",
+    "name": "수학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "자연과학대학(춘천)",
+    "name": "지질·지구물리학부",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "자연과학대학(춘천)",
+    "name": "화학·생화학부",
+    "field": "자연계"
+  },
+  {
+    "campus": "춘천",
+    "college": "자연과학대학(춘천)",
+    "name": "자연과학대학(춘천) 자유전공학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "춘천",
+    "college": "IT대학",
+    "name": "전기전자공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "IT대학",
+    "name": "전자공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "IT대학",
+    "name": "컴퓨터공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "IT대학",
+    "name": "AI융합학과",
+    "field": "공대"
+  },
+  {
+    "campus": "춘천",
+    "college": "IT대학",
+    "name": "디지털밀리터리학과",
+    "field": "공대"
+  },
+  {
+    "campus": "강릉",
+    "college": "인문대학(강릉)",
+    "name": "국어국문학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "인문대학(강릉)",
+    "name": "영어영문학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "인문대학(강릉)",
+    "name": "독어독문학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "인문대학(강릉)",
+    "name": "중어중문학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "인문대학(강릉)",
+    "name": "일본학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "인문대학(강릉)",
+    "name": "철학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "인문대학(강릉)",
+    "name": "사학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "인문대학(강릉)",
+    "name": "인문대학 자유전공학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "강릉",
+    "college": "인문대학(강릉)",
+    "name": "자유전공학부",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "강릉",
+    "college": "인문대학(강릉)",
+    "name": "글로벌융합학부",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "강릉",
+    "college": "사회과학대학(강릉)",
+    "name": "경영학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "사회과학대학(강릉)",
+    "name": "회계학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "사회과학대학(강릉)",
+    "name": "관광경영학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "사회과학대학(강릉)",
+    "name": "경제학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "사회과학대학(강릉)",
+    "name": "무역학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "사회과학대학(강릉)",
+    "name": "국제통상학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "사회과학대학(강릉)",
+    "name": "도시계획·부동산학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "사회과학대학(강릉)",
+    "name": "법학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "사회과학대학(강릉)",
+    "name": "정책학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "사회과학대학(강릉)",
+    "name": "자치행정학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "강릉",
+    "college": "자연과학대학(강릉)",
+    "name": "수학물리학부",
+    "field": "자연계"
+  },
+  {
+    "campus": "강릉",
+    "college": "자연과학대학(강릉)",
+    "name": "데이터사이언스학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "강릉",
+    "college": "자연과학대학(강릉)",
+    "name": "대기환경과학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "강릉",
+    "college": "자연과학대학(강릉)",
+    "name": "화학신소재학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "강릉",
+    "college": "자연과학대학(강릉)",
+    "name": "자연과학대학 자유전공학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "강릉",
+    "college": "자연과학대학(춘천)",
+    "name": "생명과학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "강릉",
+    "college": "생명과학대학",
+    "name": "식품영양학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "강릉",
+    "college": "생명과학대학",
+    "name": "식물생명과학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "강릉",
+    "college": "생명과학대학",
+    "name": "환경조경학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "강릉",
+    "college": "생명과학대학",
+    "name": "수산생명의학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "강릉",
+    "college": "생명과학대학",
+    "name": "해양융합과학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "강릉",
+    "college": "생명과학대학",
+    "name": "생명과학대학 자유전공학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "강릉",
+    "college": "공과대학",
+    "name": "전자·반도체공학부",
+    "field": "공대"
+  },
+  {
+    "campus": "강릉",
+    "college": "공과대학",
+    "name": "신소재·생명화학공학부",
+    "field": "공대"
+  },
+  {
+    "campus": "강릉",
+    "college": "공과대학",
+    "name": "건설환경공학부",
+    "field": "공대"
+  },
+  {
+    "campus": "강릉",
+    "college": "예술체육대학",
+    "name": "조형예술·디자인학과(한국화·서양화·조소)",
+    "field": "예체능"
+  },
+  {
+    "campus": "강릉",
+    "college": "예술체육대학",
+    "name": "조형예술·디자인학과(도자·섬유)",
+    "field": "예체능"
+  },
+  {
+    "campus": "강릉",
+    "college": "예술체육대학",
+    "name": "체육학과",
+    "field": "예체능"
+  },
+  {
+    "campus": "강릉",
+    "college": "예술체육대학",
+    "name": "음악학과",
+    "field": "예체능"
+  },
+  {
+    "campus": "강릉",
+    "college": "예술체육대학",
+    "name": "패션디자인학과",
+    "field": "예체능"
+  },
+  {
+    "campus": "강릉",
+    "college": "치과대학",
+    "name": "치의예과",
+    "field": "자연계"
+  },
+  {
+    "campus": "강릉",
+    "college": "치과대학",
+    "name": "치의학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "강릉",
+    "college": "치과대학",
+    "name": "치위생학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "삼척",
+    "college": "공학대학",
+    "name": "그린에너지공학과(탑클래스통합학과)",
+    "field": "공대"
+  },
+  {
+    "campus": "삼척",
+    "college": "공학대학",
+    "name": "첨단AI공학과(탑클래스통합학과)",
+    "field": "공대"
+  },
+  {
+    "campus": "삼척",
+    "college": "공학대학",
+    "name": "기계공학과(글로컬통합학과)",
+    "field": "공대"
+  },
+  {
+    "campus": "삼척",
+    "college": "공학대학",
+    "name": "전기공학과(지역특성화계약학과)",
+    "field": "공대"
+  },
+  {
+    "campus": "삼척",
+    "college": "공학대학",
+    "name": "미래토목건설공학과(첨단학과)",
+    "field": "공대"
+  },
+  {
+    "campus": "삼척",
+    "college": "공학대학",
+    "name": "도시건축학과(5년제)(지역특성화계약학과)",
+    "field": "공대"
+  },
+  {
+    "campus": "삼척",
+    "college": "공학대학",
+    "name": "소방방재학부",
+    "field": "공대"
+  },
+  {
+    "campus": "삼척",
+    "college": "공학대학",
+    "name": "공학대학 자유전공학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "삼척",
+    "college": "디자인스포츠대학",
+    "name": "멀티디자인학과",
+    "field": "예체능"
+  },
+  {
+    "campus": "삼척",
+    "college": "디자인스포츠대학",
+    "name": "생활조형디자인학과",
+    "field": "예체능"
+  },
+  {
+    "campus": "삼척",
+    "college": "디자인스포츠대학",
+    "name": "휴먼스포츠학과",
+    "field": "예체능"
+  },
+  {
+    "campus": "삼척",
+    "college": "인문사회대학",
+    "name": "경제금융학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "삼척",
+    "college": "인문사회대학",
+    "name": "공공행정학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "삼척",
+    "college": "인문사회대학",
+    "name": "관광학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "삼척",
+    "college": "인문사회대학",
+    "name": "사회복지학과(보건복지대학)",
+    "field": "인문계"
+  },
+  {
+    "campus": "삼척",
+    "college": "인문사회대학",
+    "name": "영어과",
+    "field": "인문계"
+  },
+  {
+    "campus": "삼척",
+    "college": "인문사회대학",
+    "name": "유아교육과",
+    "field": "인문계"
+  },
+  {
+    "campus": "삼척",
+    "college": "인문사회대학",
+    "name": "자유전공학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "삼척",
+    "college": "인문사회대학",
+    "name": "일본학과(인문대학)",
+    "field": "인문계"
+  },
+  {
+    "campus": "삼척",
+    "college": "보건과학대학",
+    "name": "간호학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "삼척",
+    "college": "보건과학대학",
+    "name": "물리치료학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "삼척",
+    "college": "보건과학대학",
+    "name": "방사선학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "삼척",
+    "college": "보건과학대학",
+    "name": "바이오기능성소재학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "삼척",
+    "college": "보건과학대학",
+    "name": "식품영양학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "삼척",
+    "college": "보건과학대학",
+    "name": "안경광학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "삼척",
+    "college": "보건과학대학",
+    "name": "응급구조학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "삼척",
+    "college": "보건과학대학",
+    "name": "작업치료학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "삼척",
+    "college": "보건과학대학",
+    "name": "치위생학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "삼척",
+    "college": "독립학부",
+    "name": "미래융합가상학과",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "삼척",
+    "college": "독립학부",
+    "name": "삼척자유전공학부",
+    "field": "기타·미분류"
+  },
+  {
+    "campus": "원주",
+    "college": "보건복지대학",
+    "name": "유아교육과",
+    "field": "인문계"
+  },
+  {
+    "campus": "원주",
+    "college": "보건복지대학",
+    "name": "간호학과",
+    "field": "자연계"
+  },
+  {
+    "campus": "원주",
+    "college": "보건복지대학",
+    "name": "사회복지학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "원주",
+    "college": "보건복지대학",
+    "name": "다문화학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "원주",
+    "college": "보건복지대학",
+    "name": "디지털미디어커뮤니케이션학과",
+    "field": "인문계"
+  },
+  {
+    "campus": "원주",
+    "college": "과학기술대학",
+    "name": "AI콘텐츠공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "원주",
+    "college": "과학기술대학",
+    "name": "전기공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "원주",
+    "college": "과학기술대학",
+    "name": "정보통신공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "원주",
+    "college": "과학기술대학",
+    "name": "산업경영공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "원주",
+    "college": "IT대학(원주)",
+    "name": "컴퓨터공학과",
+    "field": "공대"
+  },
+  {
+    "campus": "원주",
+    "college": "문화예술·공과대학",
+    "name": "기계융합공학부",
+    "field": "공대"
+  }
+]

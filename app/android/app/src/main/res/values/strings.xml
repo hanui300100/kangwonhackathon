@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">강대 모음</string>
+    <string name="title_activity_main">강대 모음</string>
+    <string name="package_name">com.moabom.app</string>
+    <string name="custom_url_scheme">com.moabom.app</string>
+</resources>
